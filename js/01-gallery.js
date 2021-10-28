@@ -34,6 +34,9 @@ function onSelectImage(event) {
       instance.close();
     }
   });
+  window.removeEventListener('click', (e) => {
+    e(instance.close());
+  });
 }
 
 // console.log(galleryItems);
